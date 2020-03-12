@@ -5,7 +5,7 @@ require("./node_modules/bootstrap/dist/js/bootstrap.min");
 $.get("https://lab.ihned.cz/nk.js", null, function (data) {
     //window.hhtml = data
 
-    var tt = hhtml.match(/(<table.*?<\/table>)/gs)
+    var tt = data.match(/(<table.*?<\/table>)/gs)
 
     var tab = tt[0]
     var rows = tab.match(/(<tr.*?<\/tr>)/gs)
