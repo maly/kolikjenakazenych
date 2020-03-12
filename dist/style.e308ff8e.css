@@ -2,4 +2,30 @@
     height: 100vh;
 }
 
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    /*background-image: url("https://img.ihned.cz/attachment.php/750/71992750/mGau6FKiTgyoMI1Wh0JL3jD2fNEOPBQn/prumysl40_725962114_wide.jpg");*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*
+    background: .gradient(linear, top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0) 100%)
+    */
+    /*
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0) 100%),
+    url("https://img.ihned.cz/attachment.php/750/71992750/mGau6FKiTgyoMI1Wh0JL3jD2fNEOPBQn/prumysl40_725962114_wide.jpg");
+    */
+
+}
+
+div {
+    font-size: 11vh
+}
+
+h1 {
+    font-size: 30vh;
+    font-weight: bold
+}
+
 /*# sourceMappingURL=/style.e308ff8e.css.map */
