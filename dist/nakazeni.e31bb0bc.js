@@ -15645,6 +15645,12 @@ require("./node_modules/bootstrap/dist/js/bootstrap.min");
 $.get("https://lab.ihned.cz/nk.js", null, function (data) {
   //window.hhtml = data
   var tt = data.match(/(<table[\s\S]*?<\/table>)/g);
+
+  if (!tt || tt.length < 1) {
+    $("#over").show();
+    return;
+  }
+
   var tab = tt[0];
   var rows = tab.match(/(<tr[\s\S]*?<\/tr>)/g);
   rows = rows.map(function (q) {
@@ -15682,7 +15688,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50300" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59571" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
