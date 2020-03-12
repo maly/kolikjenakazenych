@@ -12,6 +12,7 @@ $.get("https://lab.ihned.cz/nk.js", null, function (data) {
     rows = rows.map(q => q.match(/<p>(.*?)<\/p>/gs))
     rows.shift()
     $("#num").text(rows[0][3].replace(/<.*?>/g, ""))
+    $("#content").show()
     //console.log("DATA", rows)
 
 })

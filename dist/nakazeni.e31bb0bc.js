@@ -15651,7 +15651,8 @@ $.get("https://lab.ihned.cz/nk.js", null, function (data) {
     return q.match(/<p>([\s\S]*?)<\/p>/g);
   });
   rows.shift();
-  $("#num").text(rows[0][3].replace(/<.*?>/g, "")); //console.log("DATA", rows)
+  $("#num").text(rows[0][3].replace(/<.*?>/g, ""));
+  $("#content").show(); //console.log("DATA", rows)
 });
 },{"./node_modules/jquery/dist/jquery.min.js":"node_modules/jquery/dist/jquery.min.js","./node_modules/bootstrap/dist/js/bootstrap.min":"node_modules/bootstrap/dist/js/bootstrap.min.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
