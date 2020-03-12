@@ -7,6 +7,11 @@ $.get("https://lab.ihned.cz/nk.js", null, function (data) {
 
     var tt = data.match(/(<table.*?<\/table>)/gs)
 
+    if (!tt || tt.length < 1) {
+        $("#over").show()
+        return
+    }
+
     var tab = tt[0]
     var rows = tab.match(/(<tr.*?<\/tr>)/gs)
     rows = rows.map(q => q.match(/<p>(.*?)<\/p>/gs))
